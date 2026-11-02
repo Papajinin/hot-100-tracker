@@ -1,0 +1,555 @@
+{
+ "year": 2026,
+ "lastChart": "2026-10-31",
+ "nextNo": 27,
+ "songs": [
+  {
+   "title": "The Fate Of Ophelia",
+   "artist": "Taylor Swift",
+   "top10": 13,
+   "wks": 32,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 1
+  },
+  {
+   "title": "Golden",
+   "artist": "HUNTR/X",
+   "top10": 17,
+   "wks": 47,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "Ordinary",
+   "artist": "Alex Warren",
+   "top10": 21,
+   "wks": 65,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "Folded",
+   "artist": "Kehlani",
+   "top10": 15,
+   "wks": 52,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 3
+  },
+  {
+   "title": "BACK TO FRIENDS",
+   "artist": "SOMBR",
+   "top10": 8,
+   "wks": 52,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "Opalite",
+   "artist": "Taylor Swift",
+   "top10": 11,
+   "wks": 31,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 5
+  },
+  {
+   "title": "Mutt",
+   "artist": "Leon Thomas",
+   "top10": 2,
+   "wks": 52,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "Daisies",
+   "artist": "Justin Bieber",
+   "top10": 2,
+   "wks": 34,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 10
+  },
+  {
+   "title": "Stateside",
+   "artist": "PinkPantheress",
+   "top10": 7,
+   "wks": 31,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 7
+  },
+  {
+   "title": "American Girls",
+   "artist": "Harry Styles",
+   "top10": 2,
+   "wks": 21,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 19
+  },
+  {
+   "title": "Swim",
+   "artist": "BTS",
+   "top10": 4,
+   "wks": 20,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 9
+  },
+  {
+   "title": "Man I Need",
+   "artist": "Olivia Dean",
+   "top10": 37,
+   "wks": 54,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 2
+  },
+  {
+   "title": "Choosin' Texas",
+   "artist": "Ella Langley",
+   "top10": 43,
+   "wks": 53,
+   "rank": 1,
+   "debut": "2025-11-01",
+   "status": "song",
+   "no": 4
+  },
+  {
+   "title": "End Of Beginning",
+   "artist": "Ella Langley",
+   "top10": 3,
+   "wks": 31,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "I Just Might",
+   "artist": "Bruno Mars",
+   "top10": 25,
+   "wks": 41,
+   "rank": 14,
+   "debut": "2026-01-24",
+   "status": "song",
+   "no": 6
+  },
+  {
+   "title": "Aperture",
+   "artist": "Harry Styles",
+   "top10": 2,
+   "wks": 12,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "The Great Divide",
+   "artist": "Noah Kahan",
+   "top10": 1,
+   "wks": 22,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Risk It All",
+   "artist": "Bruno Mars",
+   "top10": 3,
+   "wks": 34,
+   "rank": 19,
+   "debut": "2026-03-14",
+   "status": "song",
+   "no": 18
+  },
+  {
+   "title": "So Easy (To Fall In Love)",
+   "artist": "Olivia Dean",
+   "top10": 24,
+   "wks": 52,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 8
+  },
+  {
+   "title": "Be Her",
+   "artist": "Ella Langley",
+   "top10": 24,
+   "wks": 36,
+   "rank": 17,
+   "debut": "2026-02-28",
+   "status": "song",
+   "no": 11
+  },
+  {
+   "title": "Drop Dead",
+   "artist": "Olivia Rodrigo",
+   "top10": 7,
+   "wks": 27,
+   "rank": 27,
+   "debut": "2026-05-02",
+   "status": "song",
+   "no": 12
+  },
+  {
+   "title": "I Can't Love You Anymore",
+   "artist": "Ella Langley & Morgan Wallen",
+   "top10": 14,
+   "wks": 26,
+   "rank": 23,
+   "debut": "2026-05-09",
+   "status": "song",
+   "no": 14
+  },
+  {
+   "title": "Doors",
+   "artist": "Noah Kahan",
+   "top10": 1,
+   "wks": 20,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Dracula",
+   "artist": "Tame Impala & JENNIE",
+   "top10": 22,
+   "wks": 56,
+   "rank": 8,
+   "debut": "2025-10-11",
+   "status": "song",
+   "no": 13
+  },
+  {
+   "title": "Janice STFU",
+   "artist": "Drake",
+   "top10": 8,
+   "wks": 23,
+   "rank": 24,
+   "debut": "2026-05-30",
+   "status": "song",
+   "no": 15
+  },
+  {
+   "title": "Ran To Atlanta",
+   "artist": "Drake",
+   "top10": 2,
+   "wks": 15,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Whisper My Name",
+   "artist": "Drake",
+   "top10": 2,
+   "wks": 12,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Shabang",
+   "artist": "Drake",
+   "top10": 3,
+   "wks": 20,
+   "rank": null,
+   "debut": null,
+   "status": "song",
+   "no": 20
+  },
+  {
+   "title": "National Treasures",
+   "artist": "Drake",
+   "top10": 1,
+   "wks": 12,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Make Them Cry",
+   "artist": "Drake",
+   "top10": 1,
+   "wks": 11,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "carry"
+  },
+  {
+   "title": "Dust",
+   "artist": "Drake",
+   "top10": 1,
+   "wks": 11,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "2 Hard 4 The Radio",
+   "artist": "Drake",
+   "top10": 1,
+   "wks": 14,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Make Them Pay",
+   "artist": "Drake",
+   "top10": 1,
+   "wks": 6,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "The Cure",
+   "artist": "Olivia Rodrigo",
+   "top10": 2,
+   "wks": 22,
+   "rank": 26,
+   "debut": "2026-06-06",
+   "status": "song",
+   "no": 25
+  },
+  {
+   "title": "Hate That I Made You Love Me",
+   "artist": "Ariana Grande",
+   "top10": 20,
+   "wks": 21,
+   "rank": 11,
+   "debut": "2026-06-13",
+   "status": "song",
+   "no": 16
+  },
+  {
+   "title": "I Knew It, I Knew You",
+   "artist": "Taylor Swift",
+   "top10": 15,
+   "wks": 20,
+   "rank": 49,
+   "debut": "2026-06-20",
+   "status": "song",
+   "no": 17
+  },
+  {
+   "title": "Stupid Song",
+   "artist": "Olivia Rodrigo",
+   "top10": 6,
+   "wks": 19,
+   "rank": 10,
+   "debut": "2026-06-27",
+   "status": "song",
+   "no": 23
+  },
+  {
+   "title": "Honeybee",
+   "artist": "Olivia Rodrigo",
+   "top10": 1,
+   "wks": 19,
+   "rank": 82,
+   "debut": "2026-06-27",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Boston",
+   "artist": "Stella Lefty",
+   "top10": 15,
+   "wks": 29,
+   "rank": 6,
+   "debut": "2026-04-18",
+   "status": "song",
+   "no": 21
+  },
+  {
+   "title": "Been By Now",
+   "artist": "Morgan Wallen",
+   "top10": 13,
+   "wks": 13,
+   "rank": 7,
+   "debut": "2026-08-08",
+   "status": "song",
+   "no": 22
+  },
+  {
+   "title": "Petal",
+   "artist": "Ariana Grande",
+   "top10": 1,
+   "wks": 12,
+   "rank": 40,
+   "debut": "2026-08-15",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "BbY WOW",
+   "artist": "Karol G With Judeline & rusowsky",
+   "top10": 5,
+   "wks": 11,
+   "rank": 12,
+   "debut": "2026-08-22",
+   "status": "song",
+   "no": 24
+  },
+  {
+   "title": "Last Thing You Need",
+   "artist": "Morgan Wallen",
+   "top10": 1,
+   "wks": 5,
+   "rank": 21,
+   "debut": "2026-10-03",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Patient Zero",
+   "artist": "Taylor Swift",
+   "top10": 4,
+   "wks": 4,
+   "rank": 5,
+   "debut": "2026-10-10",
+   "status": "song",
+   "no": 26
+  },
+  {
+   "title": "Cleveland!",
+   "artist": "Taylor Swift",
+   "top10": 1,
+   "wks": 3,
+   "rank": null,
+   "debut": null,
+   "status": "out",
+   "no": null,
+   "before": "watch"
+  },
+  {
+   "title": "Babylon",
+   "artist": "Taylor Swift",
+   "top10": 1,
+   "wks": 4,
+   "rank": 84,
+   "debut": "2026-10-10",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Pink Clouding",
+   "artist": "Taylor Swift",
+   "top10": 1,
+   "wks": 4,
+   "rank": 91,
+   "debut": "2026-10-10",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Solar Eclipse",
+   "artist": "Drake & Don Toliver",
+   "top10": 1,
+   "wks": 3,
+   "rank": 31,
+   "debut": "2026-10-17",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Nicole Kidman",
+   "artist": "ADELA",
+   "top10": 3,
+   "wks": 7,
+   "rank": 9,
+   "debut": "2026-09-19",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Babydoll",
+   "artist": "Dominic Fike",
+   "top10": 1,
+   "wks": 37,
+   "rank": 13,
+   "debut": "2026-02-21",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Housewife",
+   "artist": "Tate McRae",
+   "top10": 1,
+   "wks": 1,
+   "rank": 2,
+   "debut": "2026-10-31",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Expectations",
+   "artist": "Olivia Rodrigo & Chappell Roan",
+   "top10": 1,
+   "wks": 19,
+   "rank": 3,
+   "debut": "2026-06-27",
+   "status": "watch",
+   "no": null
+  },
+  {
+   "title": "Lies",
+   "artist": "Zach Bryan Featuring Lana Del Rey",
+   "top10": 1,
+   "wks": 1,
+   "rank": 4,
+   "debut": "2026-10-31",
+   "status": "watch",
+   "no": null
+  }
+ ],
+ "log": [],
+ "updated": "2026-11-02T08:53:07.964Z"
+}

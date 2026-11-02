@@ -1,0 +1,126 @@
+/* Hot 100 Tracker 스타일 v3 — 개인 앱 (가족 AIN 앱의 디자인 가이드를 따르지 않음)
+   2026 테마: 검정 바탕 + 민트, 아주 굵은 글씨, 네모 테두리 (사용자가 준 2026 HOT 100 이미지의 분위기)
+   항상 검정 화면 (아이폰이 라이트 모드여도). 해마다 테마를 추가할 수 있게 색은 변수로만 씀
+   대비: 민트/검정 약 15, 회색/검정 약 6, 검정/민트 약 15, 빨강/검정 약 6.5 */
+
+:root {
+  --bg: #000000;
+  --fg: #FFFFFF;
+  --sub: #8A8A8E;
+  --line: #2A2A2C;
+  --accent: #00F5A0;      /* 민트 */
+  --on-accent: #000000;
+  --out: #FF5A5F;         /* 차트 아웃 */
+
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", sans-serif;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --t: .35s;
+  --t-press: .1s;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; background: var(--bg); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+[hidden] { display: none !important; }
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* ---------- 헤더 ---------- */
+/* 맨 위에 고정: 상태 표시줄 아래까지 바탕색으로 덮음 (홈 화면 앱에서 뿌연 효과가 깔리지 않게) */
+.top {
+  position: sticky; top: 0; z-index: 10;
+  padding: calc(16px + env(safe-area-inset-top, 0px)) 16px 0;
+  background: var(--bg);
+}
+.top-row { display: flex; align-items: flex-end; gap: 10px; padding: 0 2px 14px; }
+.logo { margin: 0; font-size: 34px; font-weight: 900; line-height: .9; letter-spacing: -1.5px; color: var(--accent); }
+.logo small { display: block; margin-top: 6px; font-size: 11px; font-weight: 800; letter-spacing: 4px; color: var(--fg); }
+.week { margin-left: auto; text-align: right; font-size: 12px; font-weight: 700; letter-spacing: .5px; line-height: 1.4; color: var(--sub); font-variant-numeric: tabular-nums; }
+.week b { display: block; font-size: 15px; font-weight: 800; color: var(--fg); }
+
+/* 탭 (지켜보는 중 / 올해의 곡 / 차트 아웃): 민트 테두리 네모, 고른 탭은 민트로 채움 */
+.tabs { display: flex; gap: 8px; padding-bottom: 14px; }
+.tabs button {
+  flex: 1; min-height: 40px; padding: 0 4px;
+  border: 2px solid var(--accent); color: var(--accent);
+  font-size: 13px; font-weight: 800; font-variant-numeric: tabular-nums;
+  transition: background-color var(--t) var(--ease), color var(--t) var(--ease), transform var(--t) var(--ease);
+}
+.tabs button.on { background: var(--accent); color: var(--on-accent); }
+.tabs button:active { transform: scale(.97); transition-duration: var(--t-press); }
+
+/* ---------- 곡 목록 ---------- */
+.list { margin: 0 16px; border-top: 2px solid var(--accent); }
+.li { display: flex; align-items: center; gap: 14px; min-height: 64px; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+/* 왼쪽: 올해의 곡 번호 (민트 네모), 작년에서 넘어온 곡 "-" (회색 네모) */
+.no { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border: 2px solid var(--accent); color: var(--accent); font-size: 16px; font-weight: 900; font-variant-numeric: tabular-nums; }
+.no.carry { border-color: var(--sub); color: var(--sub); }
+.info { flex: 1; min-width: 0; }
+.t { font-size: 16px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a { margin-top: 2px; font-size: 13px; color: var(--sub); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.where { font-variant-numeric: tabular-nums; }
+/* 오른쪽: Top10 / WKS 두 줄 (이름은 왼쪽, 숫자는 오른쪽 맞춤) */
+.cnt { flex: none; display: grid; grid-template-columns: auto 26px; gap: 3px 8px; align-items: baseline; font-size: 11px; font-weight: 700; letter-spacing: .5px; color: var(--sub); }
+.cnt b { font-size: 16px; font-weight: 900; color: var(--accent); text-align: right; font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.li.dropped .t { color: var(--out); }
+.li.dropped .cnt b { color: var(--fg); }
+.empty { padding: 20px 16px; font-size: 14px; color: var(--sub); text-align: center; }
+.note { margin: 0; padding: 10px 18px 0; font-size: 13px; color: var(--sub); }
+
+/* ---------- 이번 주 바뀐 것 ---------- */
+.sec-title { display: flex; align-items: baseline; margin: 0; padding: 30px 18px 10px; font-size: 13px; font-weight: 800; letter-spacing: 3px; color: var(--fg); }
+.sec-title span { margin-left: auto; font-size: 12px; font-weight: 700; letter-spacing: .5px; color: var(--sub); }
+.changes { margin: 0 16px; border-top: 2px solid var(--accent); }
+.ch { display: flex; gap: 12px; padding: 11px 2px; font-size: 14px; border-bottom: 1px solid var(--line); }
+.ch span { flex: none; width: 84px; font-weight: 700; color: var(--sub); }
+.ch p { margin: 0; flex: 1; min-width: 0; }
+.ch.red p { color: var(--out); }
+.ch.hi p { color: var(--accent); font-weight: 700; }
+
+/* 화면 들어올 때 살짝 */
+.list, .changes { animation: fade-in var(--t) var(--ease) both; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ---------- 시작 화면 (약 2초) ----------
+   1. 민트 네모 테두리가 그려짐 0 ~ 0.5초  2. 막대 세 개가 차례로 올라감 0.45 ~ 0.9초
+   3. HOT 100 / TRACKER 글씨 1.0초  (아이콘 1안과 같은 그림) */
+.splash {
+  position: fixed; inset: 0; z-index: 60;
+  display: grid; place-items: center;
+  background: var(--bg);
+  transition: opacity .35s ease;
+}
+.splash.hide { opacity: 0; pointer-events: none; }
+/* 첫 화면을 그릴 때까지는 멈춰 있다가, app.js가 .go를 붙이면 움직임 (로딩 중에 움직이면 아이폰에서 끊겨 보임) */
+.splash:not(.go) .sp-box, .splash:not(.go) .sp-bar, .splash:not(.go) .sp-word { animation-play-state: paused; }
+.splash-mark { display: flex; flex-direction: column; align-items: center; }
+.splash-mark svg { width: 64px; height: 64px; margin-bottom: 20px; overflow: visible; }
+.sp-box { fill: none; stroke: var(--accent); stroke-width: 10; stroke-dasharray: 100; stroke-dashoffset: 100; animation: sp-draw .5s ease-in-out both; }
+.sp-bar { fill: var(--accent); transform-box: fill-box; transform-origin: bottom; animation: sp-rise .25s var(--ease) both; }
+.sp-word { text-align: center; animation: sp-up .5s ease-out 1s both; }
+.sp-word .logo { font-size: 30px; }
+@keyframes sp-draw { to { stroke-dashoffset: 0; } }
+@keyframes sp-rise { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes sp-up { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sp-box, .sp-bar, .sp-word, .list, .changes { animation: none; stroke-dashoffset: 0; }
+}
