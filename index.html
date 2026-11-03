@@ -14,7 +14,7 @@
   <script>
     // 새 버전 스스로 받기 (가족 앱과 같은 방법): 켤 때 서버의 version.txt 숫자가 아래 APP_VERSION보다 크면
     // 새 화면 파일을 받아 한 번 새로고침. 올릴 때마다 두 숫자를 같이 올린다
-    const APP_VERSION = 1;
+    const APP_VERSION = 2;
     (function () {
       const t0 = Date.now();
       const key = 'hot100.updated'; // 같은 버전으로 두 번 새로고침하지 않게
@@ -30,7 +30,7 @@
         .catch(() => {}); // 인터넷이 안 되면 그냥 염
     })();
   </script>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <!-- 시작 화면 (앱을 새로 열 때만, 약 2초): 민트 네모가 그려지고 → 막대 세 개가 올라감 → HOT 100 TRACKER (아이콘과 같은 그림) -->
@@ -43,6 +43,6 @@
 
   <div class="app" id="app"></div>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

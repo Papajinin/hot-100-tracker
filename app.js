@@ -22,13 +22,13 @@ function tabSongs(key) {
 }
 
 function rowHtml(s) {
-  // 이번 주 순위는 가수 옆에 작게 (차트에 없으면 "차트 아웃")
+  // 이번 주 순위는 가수 앞에 작게 (차트에 없으면 "차트 아웃"). 가수 이름이 길어도 순위는 보이게
   const where = s.rank ? `${s.rank}위` : '차트 아웃';
   const badge = s.status === 'song' ? `<span class="no">${s.no}</span>`
     : s.status === 'carry' ? `<span class="no carry" title="작년에서 넘어온 곡">-</span>` : '';
   return `<div class="li${s.status === 'out' ? ' dropped' : ''}">
     ${badge}
-    <div class="info"><div class="t">${esc(s.title)}</div><div class="a">${esc(s.artist)}${s.status === 'out' ? '' : ` · <span class="where">${where}</span>`}</div></div>
+    <div class="info"><div class="t">${esc(s.title)}</div><div class="a">${s.status === 'out' ? '' : `<span class="where">${where}</span> · `}${esc(s.artist)}</div></div>
     <div class="cnt"><span>Top10</span><b>${s.top10}</b><span>WKS</span><b>${s.wks}</b></div>
   </div>`;
 }
@@ -61,6 +61,9 @@ function render() {
 }
 
 appEl.addEventListener('click', e => {
+  // 곡 줄을 누르면 잘린 제목·가수를 펼쳐 보기 (한 번 더 누르면 접기)
+  const li = e.target.closest('.li');
+  if (li) { li.classList.toggle('open'); return; }
   const b = e.target.closest('[data-tab]');
   if (!b || b.dataset.tab === tab) return;
   tab = b.dataset.tab;
