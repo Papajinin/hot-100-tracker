@@ -502,22 +502,22 @@
    "no": null
   },
   {
-   "title": "Nicole Kidman",
-   "artist": "ADELA",
-   "top10": 4,
-   "wks": 8,
-   "rank": 6,
-   "debut": "2026-09-19",
-   "status": "song",
-   "no": 27
-  },
-  {
    "title": "Babydoll",
    "artist": "Dominic Fike",
    "top10": 1,
    "wks": 38,
    "rank": 13,
    "debut": "2026-02-21",
+   "status": "song",
+   "no": 27
+  },
+  {
+   "title": "Nicole Kidman",
+   "artist": "ADELA",
+   "top10": 4,
+   "wks": 8,
+   "rank": 6,
+   "debut": "2026-09-19",
    "status": "song",
    "no": 28
   },
@@ -557,8 +557,8 @@
    "chart": "2026-11-07",
    "newTop10": [],
    "newSong": [
-    "Nicole Kidman",
     "Babydoll",
+    "Nicole Kidman",
     "Expectations"
    ],
    "dropped": [
