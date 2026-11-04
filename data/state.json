@@ -1,7 +1,7 @@
 {
  "year": 2026,
- "lastChart": "2026-10-31",
- "nextNo": 27,
+ "lastChart": "2026-11-07",
+ "nextNo": 30,
  "songs": [
   {
    "title": "The Fate Of Ophelia",
@@ -130,8 +130,8 @@
   {
    "title": "Choosin' Texas",
    "artist": "Ella Langley",
-   "top10": 43,
-   "wks": 53,
+   "top10": 44,
+   "wks": 54,
    "rank": 1,
    "debut": "2025-11-01",
    "status": "song",
@@ -152,7 +152,7 @@
    "title": "I Just Might",
    "artist": "Bruno Mars",
    "top10": 25,
-   "wks": 41,
+   "wks": 42,
    "rank": 14,
    "debut": "2026-01-24",
    "status": "song",
@@ -184,7 +184,7 @@
    "title": "Risk It All",
    "artist": "Bruno Mars",
    "top10": 3,
-   "wks": 34,
+   "wks": 35,
    "rank": 19,
    "debut": "2026-03-14",
    "status": "song",
@@ -204,7 +204,7 @@
    "title": "Be Her",
    "artist": "Ella Langley",
    "top10": 24,
-   "wks": 36,
+   "wks": 37,
    "rank": 17,
    "debut": "2026-02-28",
    "status": "song",
@@ -214,8 +214,8 @@
    "title": "Drop Dead",
    "artist": "Olivia Rodrigo",
    "top10": 7,
-   "wks": 27,
-   "rank": 27,
+   "wks": 28,
+   "rank": 28,
    "debut": "2026-05-02",
    "status": "song",
    "no": 12
@@ -225,7 +225,7 @@
    "artist": "Ella Langley & Morgan Wallen",
    "top10": 14,
    "wks": 26,
-   "rank": 23,
+   "rank": null,
    "debut": "2026-05-09",
    "status": "song",
    "no": 14
@@ -244,9 +244,9 @@
   {
    "title": "Dracula",
    "artist": "Tame Impala & JENNIE",
-   "top10": 22,
-   "wks": 56,
-   "rank": 8,
+   "top10": 23,
+   "wks": 57,
+   "rank": 5,
    "debut": "2025-10-11",
    "status": "song",
    "no": 13
@@ -255,8 +255,8 @@
    "title": "Janice STFU",
    "artist": "Drake",
    "top10": 8,
-   "wks": 23,
-   "rank": 24,
+   "wks": 24,
+   "rank": 25,
    "debut": "2026-05-30",
    "status": "song",
    "no": 15
@@ -352,8 +352,8 @@
    "title": "The Cure",
    "artist": "Olivia Rodrigo",
    "top10": 2,
-   "wks": 22,
-   "rank": 26,
+   "wks": 23,
+   "rank": 30,
    "debut": "2026-06-06",
    "status": "song",
    "no": 25
@@ -361,9 +361,9 @@
   {
    "title": "Hate That I Made You Love Me",
    "artist": "Ariana Grande",
-   "top10": 20,
-   "wks": 21,
-   "rank": 11,
+   "top10": 21,
+   "wks": 22,
+   "rank": 10,
    "debut": "2026-06-13",
    "status": "song",
    "no": 16
@@ -373,7 +373,7 @@
    "artist": "Taylor Swift",
    "top10": 15,
    "wks": 20,
-   "rank": 49,
+   "rank": null,
    "debut": "2026-06-20",
    "status": "song",
    "no": 17
@@ -382,8 +382,8 @@
    "title": "Stupid Song",
    "artist": "Olivia Rodrigo",
    "top10": 6,
-   "wks": 19,
-   "rank": 10,
+   "wks": 20,
+   "rank": 12,
    "debut": "2026-06-27",
    "status": "song",
    "no": 23
@@ -392,8 +392,8 @@
    "title": "Honeybee",
    "artist": "Olivia Rodrigo",
    "top10": 1,
-   "wks": 19,
-   "rank": 82,
+   "wks": 20,
+   "rank": 83,
    "debut": "2026-06-27",
    "status": "watch",
    "no": null
@@ -401,9 +401,9 @@
   {
    "title": "Boston",
    "artist": "Stella Lefty",
-   "top10": 15,
-   "wks": 29,
-   "rank": 6,
+   "top10": 16,
+   "wks": 30,
+   "rank": 3,
    "debut": "2026-04-18",
    "status": "song",
    "no": 21
@@ -411,9 +411,9 @@
   {
    "title": "Been By Now",
    "artist": "Morgan Wallen",
-   "top10": 13,
-   "wks": 13,
-   "rank": 7,
+   "top10": 14,
+   "wks": 14,
+   "rank": 4,
    "debut": "2026-08-08",
    "status": "song",
    "no": 22
@@ -422,8 +422,8 @@
    "title": "Petal",
    "artist": "Ariana Grande",
    "top10": 1,
-   "wks": 12,
-   "rank": 40,
+   "wks": 13,
+   "rank": 37,
    "debut": "2026-08-15",
    "status": "watch",
    "no": null
@@ -431,9 +431,9 @@
   {
    "title": "BbY WOW",
    "artist": "Karol G With Judeline & rusowsky",
-   "top10": 5,
-   "wks": 11,
-   "rank": 12,
+   "top10": 6,
+   "wks": 12,
+   "rank": 9,
    "debut": "2026-08-22",
    "status": "song",
    "no": 24
@@ -442,8 +442,8 @@
    "title": "Last Thing You Need",
    "artist": "Morgan Wallen",
    "top10": 1,
-   "wks": 5,
-   "rank": 21,
+   "wks": 6,
+   "rank": 22,
    "debut": "2026-10-03",
    "status": "watch",
    "no": null
@@ -451,9 +451,9 @@
   {
    "title": "Patient Zero",
    "artist": "Taylor Swift",
-   "top10": 4,
-   "wks": 4,
-   "rank": 5,
+   "top10": 5,
+   "wks": 5,
+   "rank": 8,
    "debut": "2026-10-10",
    "status": "song",
    "no": 26
@@ -474,27 +474,29 @@
    "artist": "Taylor Swift",
    "top10": 1,
    "wks": 4,
-   "rank": 84,
+   "rank": null,
    "debut": "2026-10-10",
-   "status": "watch",
-   "no": null
+   "status": "out",
+   "no": null,
+   "before": "watch"
   },
   {
    "title": "Pink Clouding",
    "artist": "Taylor Swift",
    "top10": 1,
    "wks": 4,
-   "rank": 91,
+   "rank": null,
    "debut": "2026-10-10",
-   "status": "watch",
-   "no": null
+   "status": "out",
+   "no": null,
+   "before": "watch"
   },
   {
    "title": "Solar Eclipse",
    "artist": "Drake & Don Toliver",
    "top10": 1,
-   "wks": 3,
-   "rank": 31,
+   "wks": 4,
+   "rank": 35,
    "debut": "2026-10-17",
    "status": "watch",
    "no": null
@@ -502,28 +504,28 @@
   {
    "title": "Nicole Kidman",
    "artist": "ADELA",
-   "top10": 3,
-   "wks": 7,
-   "rank": 9,
+   "top10": 4,
+   "wks": 8,
+   "rank": 6,
    "debut": "2026-09-19",
-   "status": "watch",
-   "no": null
+   "status": "song",
+   "no": 27
   },
   {
    "title": "Babydoll",
    "artist": "Dominic Fike",
    "top10": 1,
-   "wks": 37,
+   "wks": 38,
    "rank": 13,
    "debut": "2026-02-21",
-   "status": "watch",
-   "no": null
+   "status": "song",
+   "no": 28
   },
   {
    "title": "Housewife",
    "artist": "Tate McRae",
-   "top10": 1,
-   "wks": 1,
+   "top10": 2,
+   "wks": 2,
    "rank": 2,
    "debut": "2026-10-31",
    "status": "watch",
@@ -532,24 +534,39 @@
   {
    "title": "Expectations",
    "artist": "Olivia Rodrigo & Chappell Roan",
-   "top10": 1,
-   "wks": 19,
-   "rank": 3,
+   "top10": 2,
+   "wks": 20,
+   "rank": 7,
    "debut": "2026-06-27",
-   "status": "watch",
-   "no": null
+   "status": "song",
+   "no": 29
   },
   {
    "title": "Lies",
    "artist": "Zach Bryan Featuring Lana Del Rey",
    "top10": 1,
-   "wks": 1,
-   "rank": 4,
+   "wks": 2,
+   "rank": 11,
    "debut": "2026-10-31",
    "status": "watch",
    "no": null
   }
  ],
- "log": [],
- "updated": "2026-11-02T08:53:07.964Z"
+ "log": [
+  {
+   "chart": "2026-11-07",
+   "newTop10": [],
+   "newSong": [
+    "Nicole Kidman",
+    "Babydoll",
+    "Expectations"
+   ],
+   "dropped": [
+    "Babylon",
+    "Pink Clouding"
+   ],
+   "revived": []
+  }
+ ],
+ "updated": "2026-11-04T01:44:17.094Z"
 }
