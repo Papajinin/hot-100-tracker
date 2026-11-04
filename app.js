@@ -21,14 +21,26 @@ function tabSongs(key) {
   return songs.filter(s => s.status === 'out');
 }
 
+// 순위 표시: 지난주→이번 주 (예: 7→4위, NEW→4위, RE→4위). 지난주 기록이 없으면 4위만
+function rankText(s) { return s.lw == null ? `${s.rank}위` : `${s.lw}→${s.rank}위`; }
+function whereText(s) {
+  if (s.status === 'out') {
+    // 차트 아웃 탭: 아직 HOT 100 안이면 지금 순위, 완전히 빠졌으면 마지막 순위와 그 주
+    if (s.rank) return `지금 ${rankText(s)}`;
+    return s.lastRank ? `마지막 ${s.lastRank}위 · ${md(s.lastWeek)}주` : '';
+  }
+  if (s.rank) return rankText(s);
+  return s.lastRank ? `차트 아웃 · 마지막 ${s.lastRank}위` : '차트 아웃';
+}
+
 function rowHtml(s) {
-  // 이번 주 순위는 가수 앞에 작게 (차트에 없으면 "차트 아웃"). 가수 이름이 길어도 순위는 보이게
-  const where = s.rank ? `${s.rank}위` : '차트 아웃';
+  // 순위는 가수 앞에 작게. 가수 이름이 길어도 순위는 보이게
+  const where = whereText(s);
   const badge = s.status === 'song' ? `<span class="no">${s.no}</span>`
     : s.status === 'carry' ? `<span class="no carry" title="작년에서 넘어온 곡">-</span>` : '';
   return `<div class="li${s.status === 'out' ? ' dropped' : ''}">
     ${badge}
-    <div class="info"><div class="t">${esc(s.title)}</div><div class="a">${s.status === 'out' ? '' : `<span class="where">${where}</span> · `}${esc(s.artist)}</div></div>
+    <div class="info"><div class="t">${esc(s.title)}</div><div class="a">${where ? `<span class="where">${where}</span> · ` : ''}${esc(s.artist)}</div></div>
     <div class="cnt"><span>Top10</span><b>${s.top10}</b><span>WKS</span><b>${s.wks}</b></div>
   </div>`;
 }

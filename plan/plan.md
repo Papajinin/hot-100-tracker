@@ -27,7 +27,7 @@
 ## 파일
 | 파일 | 하는 일 |
 |---|---|
-| `index.html`, `style.css`, `app.js` | 화면 (2026 테마: 검정 + 민트) (탭: 지켜보는 중 / 올해의 곡 / 차트 아웃, 이번 주 바뀐 것. 왼쪽에 올해의 곡 번호, 이번 주 순위는 가수 앞에 작게, 줄을 누르면 잘린 제목·가수 펼쳐 보기) |
+| `index.html`, `style.css`, `app.js` | 화면 (2026 테마: 검정 + 민트) (탭: 지켜보는 중 / 올해의 곡 / 차트 아웃, 이번 주 바뀐 것. 왼쪽에 올해의 곡 번호, 순위는 가수 앞에 "지난주→이번 주"(7→4위, NEW→4위, RE→4위), 줄을 누르면 잘린 제목·가수 펼쳐 보기. 차트 아웃 탭은 "지금 39→34위" 또는 "마지막 23위 · 10/24주", 빠진 올해의 곡은 "차트 아웃 · 마지막 23위") |
 | `data/state.json` | 기록 전체 (GitHub가 매주 고침). 첫 자료는 사용자 엑셀 (10/31주까지) |
 | `tools/chart.mjs` | 빌보드 화면 읽기 + 규칙 |
 | `tools/update.mjs` | 다음 주 차트 읽어서 넣기 (`node tools/update.mjs`) |
@@ -35,5 +35,6 @@
 | `.github/workflows/weekly.yml` | 예약 작업 |
 
 ## state.json 곡 하나
-`{ title, artist, top10, wks, rank(이번 주 순위, 없으면 null), debut(처음 차트인 날짜), status, no }`
+`{ title, artist, top10, wks, rank(이번 주 순위, 없으면 null), lw(지난주 순위 숫자·NEW·RE), lastRank·lastWeek(차트에서 빠지기 전 마지막 순위와 그 주), debut(처음 차트인 날짜), status, no }`
+- 탈락(out) 곡도 HOT 100 안에 있으면 rank·lw는 적음 (횟수는 안 셈)
 - status: `watch` 판정 전 · `song` 올해의 곡(no 번호) · `carry` "-" 곡 · `out` 탈락(`before`에 탈락 전 상태)

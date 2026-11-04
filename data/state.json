@@ -11,7 +11,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 1
+   "no": 1,
+   "lw": null
   },
   {
    "title": "Golden",
@@ -22,7 +23,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "Ordinary",
@@ -33,7 +35,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "Folded",
@@ -43,7 +46,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 3
+   "no": 3,
+   "lw": null
   },
   {
    "title": "BACK TO FRIENDS",
@@ -54,7 +58,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "Opalite",
@@ -64,7 +69,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 5
+   "no": 5,
+   "lw": null
   },
   {
    "title": "Mutt",
@@ -75,7 +81,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "Daisies",
@@ -85,7 +92,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 10
+   "no": 10,
+   "lw": null
   },
   {
    "title": "Stateside",
@@ -95,7 +103,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 7
+   "no": 7,
+   "lw": null
   },
   {
    "title": "American Girls",
@@ -105,7 +114,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 19
+   "no": 19,
+   "lw": null
   },
   {
    "title": "Swim",
@@ -115,7 +125,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 9
+   "no": 9,
+   "lw": null
   },
   {
    "title": "Man I Need",
@@ -125,7 +136,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 2
+   "no": 2,
+   "lw": null
   },
   {
    "title": "Choosin' Texas",
@@ -135,7 +147,8 @@
    "rank": 1,
    "debut": "2025-11-01",
    "status": "song",
-   "no": 4
+   "no": 4,
+   "lw": 1
   },
   {
    "title": "End Of Beginning",
@@ -146,7 +159,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "I Just Might",
@@ -156,7 +170,8 @@
    "rank": 14,
    "debut": "2026-01-24",
    "status": "song",
-   "no": 6
+   "no": 6,
+   "lw": 14
   },
   {
    "title": "Aperture",
@@ -167,7 +182,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "The Great Divide",
@@ -178,7 +194,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Risk It All",
@@ -188,7 +205,8 @@
    "rank": 19,
    "debut": "2026-03-14",
    "status": "song",
-   "no": 18
+   "no": 18,
+   "lw": 19
   },
   {
    "title": "So Easy (To Fall In Love)",
@@ -198,7 +216,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 8
+   "no": 8,
+   "lw": null
   },
   {
    "title": "Be Her",
@@ -208,7 +227,8 @@
    "rank": 17,
    "debut": "2026-02-28",
    "status": "song",
-   "no": 11
+   "no": 11,
+   "lw": 17
   },
   {
    "title": "Drop Dead",
@@ -218,7 +238,8 @@
    "rank": 28,
    "debut": "2026-05-02",
    "status": "song",
-   "no": 12
+   "no": 12,
+   "lw": 27
   },
   {
    "title": "I Can't Love You Anymore",
@@ -228,7 +249,10 @@
    "rank": null,
    "debut": "2026-05-09",
    "status": "song",
-   "no": 14
+   "no": 14,
+   "lw": null,
+   "lastRank": 23,
+   "lastWeek": "2026-10-31"
   },
   {
    "title": "Doors",
@@ -239,7 +263,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Dracula",
@@ -249,7 +274,8 @@
    "rank": 5,
    "debut": "2025-10-11",
    "status": "song",
-   "no": 13
+   "no": 13,
+   "lw": 8
   },
   {
    "title": "Janice STFU",
@@ -259,7 +285,8 @@
    "rank": 25,
    "debut": "2026-05-30",
    "status": "song",
-   "no": 15
+   "no": 15,
+   "lw": 24
   },
   {
    "title": "Ran To Atlanta",
@@ -270,7 +297,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Whisper My Name",
@@ -281,7 +309,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Shabang",
@@ -291,7 +320,8 @@
    "rank": null,
    "debut": null,
    "status": "song",
-   "no": 20
+   "no": 20,
+   "lw": null
   },
   {
    "title": "National Treasures",
@@ -302,7 +332,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Make Them Cry",
@@ -313,7 +344,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "carry"
+   "before": "carry",
+   "lw": null
   },
   {
    "title": "Dust",
@@ -324,7 +356,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "2 Hard 4 The Radio",
@@ -335,7 +368,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Make Them Pay",
@@ -346,7 +380,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "The Cure",
@@ -356,7 +391,8 @@
    "rank": 30,
    "debut": "2026-06-06",
    "status": "song",
-   "no": 25
+   "no": 25,
+   "lw": 26
   },
   {
    "title": "Hate That I Made You Love Me",
@@ -366,7 +402,8 @@
    "rank": 10,
    "debut": "2026-06-13",
    "status": "song",
-   "no": 16
+   "no": 16,
+   "lw": 11
   },
   {
    "title": "I Knew It, I Knew You",
@@ -376,7 +413,10 @@
    "rank": null,
    "debut": "2026-06-20",
    "status": "song",
-   "no": 17
+   "no": 17,
+   "lw": null,
+   "lastRank": 49,
+   "lastWeek": "2026-10-31"
   },
   {
    "title": "Stupid Song",
@@ -386,7 +426,8 @@
    "rank": 12,
    "debut": "2026-06-27",
    "status": "song",
-   "no": 23
+   "no": 23,
+   "lw": 10
   },
   {
    "title": "Honeybee",
@@ -396,7 +437,8 @@
    "rank": 83,
    "debut": "2026-06-27",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 82
   },
   {
    "title": "Boston",
@@ -406,7 +448,8 @@
    "rank": 3,
    "debut": "2026-04-18",
    "status": "song",
-   "no": 21
+   "no": 21,
+   "lw": 6
   },
   {
    "title": "Been By Now",
@@ -416,7 +459,8 @@
    "rank": 4,
    "debut": "2026-08-08",
    "status": "song",
-   "no": 22
+   "no": 22,
+   "lw": 7
   },
   {
    "title": "Petal",
@@ -426,7 +470,8 @@
    "rank": 37,
    "debut": "2026-08-15",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 40
   },
   {
    "title": "BbY WOW",
@@ -436,7 +481,8 @@
    "rank": 9,
    "debut": "2026-08-22",
    "status": "song",
-   "no": 24
+   "no": 24,
+   "lw": 12
   },
   {
    "title": "Last Thing You Need",
@@ -446,7 +492,8 @@
    "rank": 22,
    "debut": "2026-10-03",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 21
   },
   {
    "title": "Patient Zero",
@@ -456,7 +503,8 @@
    "rank": 8,
    "debut": "2026-10-10",
    "status": "song",
-   "no": 26
+   "no": 26,
+   "lw": 5
   },
   {
    "title": "Cleveland!",
@@ -467,7 +515,8 @@
    "debut": null,
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null
   },
   {
    "title": "Babylon",
@@ -478,7 +527,10 @@
    "debut": "2026-10-10",
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null,
+   "lastRank": 84,
+   "lastWeek": "2026-10-31"
   },
   {
    "title": "Pink Clouding",
@@ -489,7 +541,10 @@
    "debut": "2026-10-10",
    "status": "out",
    "no": null,
-   "before": "watch"
+   "before": "watch",
+   "lw": null,
+   "lastRank": 91,
+   "lastWeek": "2026-10-31"
   },
   {
    "title": "Solar Eclipse",
@@ -499,7 +554,8 @@
    "rank": 35,
    "debut": "2026-10-17",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 31
   },
   {
    "title": "Babydoll",
@@ -509,7 +565,8 @@
    "rank": 13,
    "debut": "2026-02-21",
    "status": "song",
-   "no": 27
+   "no": 27,
+   "lw": 13
   },
   {
    "title": "Nicole Kidman",
@@ -519,7 +576,8 @@
    "rank": 6,
    "debut": "2026-09-19",
    "status": "song",
-   "no": 28
+   "no": 28,
+   "lw": 9
   },
   {
    "title": "Housewife",
@@ -529,7 +587,8 @@
    "rank": 2,
    "debut": "2026-10-31",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 2
   },
   {
    "title": "Expectations",
@@ -539,7 +598,8 @@
    "rank": 7,
    "debut": "2026-06-27",
    "status": "song",
-   "no": 29
+   "no": 29,
+   "lw": 3
   },
   {
    "title": "Lies",
@@ -549,7 +609,8 @@
    "rank": 11,
    "debut": "2026-10-31",
    "status": "watch",
-   "no": null
+   "no": null,
+   "lw": 4
   }
  ],
  "log": [

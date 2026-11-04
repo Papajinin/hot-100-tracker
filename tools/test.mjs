@@ -94,12 +94,37 @@ test('같은 제목이 두 곡이면 가수로 구분', () => {
   assert.equal(e.rank, 2);
 });
 
+test('지난주 순위(LW): 기록 중인 곡·새 곡에 그대로, 빠지면 없음', () => {
+  const c = chart('2026-11-07', [['S', 3, 6], ['New', 7, 1]]);
+  c.entries[2].lw = 8; c.entries[6].lw = 'NEW';
+  const st = applyWeek(base([song({ rank: 8 }), song({ title: 'Gone', rank: 9 })]), c);
+  const by = t => st.songs.find(x => x.title === t);
+  assert.equal(by('S').lw, 8); assert.equal(by('New').lw, 'NEW'); assert.equal(by('Gone').lw, null);
+});
+
+test('차트에서 빠지면 마지막 순위와 그 주를 적어 둠 (탈락 곡·올해의 곡 모두)', () => {
+  const st = applyWeek(base([song({ title: 'Gone', rank: 23 }), song({ title: 'Hit', rank: 40, status: 'song', no: 3 })]), chart('2026-11-07', []));
+  const by = t => st.songs.find(x => x.title === t);
+  assert.deepEqual([by('Gone').status, by('Gone').lastRank, by('Gone').lastWeek], ['out', 23, '2026-10-31']);
+  assert.deepEqual([by('Hit').status, by('Hit').lastRank, by('Hit').lastWeek], ['song', 40, '2026-10-31']);
+});
+
+test('탈락 곡이 11~100위에 있으면 지금 순위만 적고 횟수는 안 셈', () => {
+  const c = chart('2026-11-07', [['S', 34, 12]]); c.entries[33].lw = 39;
+  const st = applyWeek(base([song({ status: 'out', before: 'watch', rank: null, top10: 2, wks: 10 })]), c);
+  const s = st.songs[0];
+  assert.deepEqual([s.status, s.rank, s.lw, s.top10, s.wks], ['out', 34, 39, 2, 10]);
+  const st2 = applyWeek(st, chart('2026-11-14', []));
+  assert.deepEqual([st2.songs[0].rank, st2.songs[0].lastRank, st2.songs[0].lastWeek], [null, 34, '2026-11-07']);
+});
+
 test('빌보드 화면 읽기 (저장해 둔 화면이 있을 때)', () => {
   const f = process.env.CHART_HTML;
   if (!f || !fs.existsSync(f)) return;
   const c = parseChart(fs.readFileSync(f, 'utf8'));
   assert.equal(c.entries.length, 100);
   assert.ok(c.entries.every(e => e.wks > 0 && e.title && e.artist));
+  assert.ok(c.entries.every(e => typeof e.lw === 'number' || e.lw === 'NEW' || e.lw === 'RE'), '지난주 순위');
 });
 
 console.log(`\n${n}개 통과`);

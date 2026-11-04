@@ -1,5 +1,5 @@
 // Hot 100 Tracker: 빌보드 HOT 100 기록 규칙 (매주 GitHub가 update.mjs로 돌리고, 테스트도 이 파일을 씀)
-// - 빌보드 차트 화면(HTML)에서 순위·곡·가수·차트인 주(WKS)·첫 차트인 날짜를 읽음
+// - 빌보드 차트 화면(HTML)에서 순위·곡·가수·차트인 주(WKS)·첫 차트인 날짜·지난주 순위(LW)를 읽음
 // - 한 번이라도 Top 10에 든 곡만 기록. 규칙은 plan/plan.md 참고
 
 const MONTHS = { January: 1, February: 2, March: 3, April: 4, May: 5, June: 6, July: 7, August: 8, September: 9, October: 10, November: 11, December: 12 };
@@ -17,7 +17,8 @@ function usDate(s) {
   return `${y}-${m[1]}-${m[2]}`;
 }
 
-// 차트 화면 → { date: "2026-10-31", entries: [{ rank, title, artist, wks, debut }] }. 이상하면 null
+// 차트 화면 → { date: "2026-10-31", entries: [{ rank, title, artist, wks, debut, lw }] }. 이상하면 null
+// lw: 지난주 순위 숫자, 새로 진입이면 'NEW', 재진입이면 'RE' (빌보드는 둘 다 "-", 주가 1이면 새로 진입)
 export function parseChart(page) {
   const w = /Week of ([A-Z][a-z]+) (\d{1,2}), (\d{4})/.exec(page);
   if (!w || !MONTHS[w[1]]) return null;
@@ -27,7 +28,7 @@ export function parseChart(page) {
     const t = /id="title-of-a-story"[^>]*>([\s\S]*?)<\/h3>\s*<span[^>]*>([\s\S]*?)<\/span>/.exec(r);
     // 칸 이름(WEEKS ON CHART, Debut Chart Date) 바로 뒤의 숫자를 읽음
     const after = name => {
-      const k = r.indexOf(name);
+      const k = typeof name === 'string' ? r.indexOf(name) : r.search(name);
       if (k < 0) return null;
       const m = /class="c-label[^"]*"[^>]*>([\s\S]*?)<\/span>/.exec(r.slice(k));
       return m ? clean(m[1]) : null;
@@ -38,7 +39,16 @@ export function parseChart(page) {
       artist: clean(t[2]),
       wks: parseInt(after('WEEKS ON CHART'), 10),
       debut: usDate(after('Debut Chart Date')),
+      lw: null,
     };
+  });
+  // 지난주 순위: 칸 이름 "LW" 바로 뒤
+  rows.forEach((r, i) => {
+    const e = entries[i]; if (!e) return;
+    const k = r.search(/>\s*LW\s*</);
+    const m = k >= 0 && /class="c-label[^"]*"[^>]*>([\s\S]*?)<\/span>/.exec(r.slice(k + 1));
+    const v = m ? clean(m[1]) : '';
+    e.lw = /^\d+$/.test(v) ? Number(v) : e.wks === 1 ? 'NEW' : 'RE';
   });
   if (entries.length !== 100 || entries.some(e => !e || !e.title || !(e.wks > 0))) return null;
   return { date, entries };
@@ -82,23 +92,31 @@ export function applyWeek(state, chart) {
   for (const s of songs) {
     const e = findEntry(s, chart.entries);
     if (e) used.add(e.rank);
+    // 차트에서 빠지는 주: 마지막 순위와 그 주를 적어 둠 (앱에 "마지막 23위 · 10/24주")
+    if (!e && s.rank) { s.lastRank = s.rank; s.lastWeek = st.lastChart; }
     if (s.status === 'out') {
       // 탈락한 곡은 Top 10에 다시 들어올 때만 살림 (11~100위로 돌아오면 그대로 탈락)
       if (e && e.rank <= 10) {
         s.status = s.before || 'watch';
         delete s.before;
-        s.top10++; s.wks = e.wks; s.rank = e.rank; s.debut = e.debut || s.debut;
+        s.top10++; s.wks = e.wks; s.rank = e.rank; s.lw = e.lw; s.debut = e.debut || s.debut;
         log.revived.push(s.title);
+      } else {
+        // 11~100위면 횟수는 안 세고 지금 순위만 (앱에 "지금 39→34위")
+        s.rank = e ? e.rank : null;
+        s.lw = e ? e.lw : null;
       }
       continue;
     }
     if (e) {
       s.wks = e.wks;
       s.rank = e.rank;
+      s.lw = e.lw;
       s.debut = e.debut || s.debut;
       if (e.rank <= 10) s.top10++;
     } else {
       s.rank = null;
+      s.lw = null;
       // 올해의 곡은 차트에서 빠져도 그대로 남음. 아니면 탈락
       if (s.status !== 'song') {
         s.before = s.status;
@@ -111,7 +129,7 @@ export function applyWeek(state, chart) {
   // 처음 Top 10에 든 곡 추가
   for (const e of chart.entries) {
     if (e.rank > 10 || used.has(e.rank)) continue;
-    songs.push({ title: e.title, artist: e.artist, top10: 1, wks: e.wks, rank: e.rank, debut: e.debut, status: 'watch', no: null, since: chart.date });
+    songs.push({ title: e.title, artist: e.artist, top10: 1, wks: e.wks, rank: e.rank, lw: e.lw, debut: e.debut, status: 'watch', no: null, since: chart.date });
     log.newTop10.push(e.title);
   }
 
