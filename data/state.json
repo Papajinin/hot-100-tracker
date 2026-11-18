@@ -1,7 +1,7 @@
 {
  "year": 2026,
- "lastChart": "2026-11-14",
- "nextNo": 30,
+ "lastChart": "2026-11-21",
+ "nextNo": 31,
  "songs": [
   {
    "title": "The Fate Of Ophelia",
@@ -142,8 +142,8 @@
   {
    "title": "Choosin' Texas",
    "artist": "Ella Langley",
-   "top10": 45,
-   "wks": 55,
+   "top10": 46,
+   "wks": 56,
    "rank": 1,
    "debut": "2025-11-01",
    "status": "song",
@@ -166,12 +166,12 @@
    "title": "I Just Might",
    "artist": "Bruno Mars",
    "top10": 25,
-   "wks": 43,
-   "rank": 17,
+   "wks": 44,
+   "rank": 15,
    "debut": "2026-01-24",
    "status": "song",
    "no": 6,
-   "lw": 14
+   "lw": 17
   },
   {
    "title": "Aperture",
@@ -202,11 +202,13 @@
    "artist": "Bruno Mars",
    "top10": 3,
    "wks": 36,
-   "rank": 24,
+   "rank": null,
    "debut": "2026-03-14",
    "status": "song",
    "no": 18,
-   "lw": 19
+   "lw": null,
+   "lastRank": 24,
+   "lastWeek": "2026-11-14"
   },
   {
    "title": "So Easy (To Fall In Love)",
@@ -223,12 +225,12 @@
    "title": "Be Her",
    "artist": "Ella Langley",
    "top10": 24,
-   "wks": 38,
-   "rank": 22,
+   "wks": 39,
+   "rank": 20,
    "debut": "2026-02-28",
    "status": "song",
    "no": 11,
-   "lw": 17
+   "lw": 22
   },
   {
    "title": "Drop Dead",
@@ -271,24 +273,24 @@
   {
    "title": "Dracula",
    "artist": "Tame Impala & JENNIE",
-   "top10": 24,
-   "wks": 58,
+   "top10": 25,
+   "wks": 59,
    "rank": 3,
    "debut": "2025-10-11",
    "status": "song",
    "no": 13,
-   "lw": 5
+   "lw": 3
   },
   {
    "title": "Janice STFU",
    "artist": "Drake",
    "top10": 8,
-   "wks": 25,
+   "wks": 26,
    "rank": 29,
    "debut": "2026-05-30",
    "status": "song",
    "no": 15,
-   "lw": 25
+   "lw": 29
   },
   {
    "title": "Ran To Atlanta",
@@ -389,23 +391,23 @@
    "title": "The Cure",
    "artist": "Olivia Rodrigo",
    "top10": 2,
-   "wks": 24,
-   "rank": 34,
+   "wks": 25,
+   "rank": 33,
    "debut": "2026-06-06",
    "status": "song",
    "no": 25,
-   "lw": 30
+   "lw": 34
   },
   {
    "title": "Hate That I Made You Love Me",
    "artist": "Ariana Grande",
-   "top10": 22,
-   "wks": 23,
-   "rank": 9,
+   "top10": 23,
+   "wks": 24,
+   "rank": 8,
    "debut": "2026-06-13",
    "status": "song",
    "no": 16,
-   "lw": 10
+   "lw": 9
   },
   {
    "title": "I Knew It, I Knew You",
@@ -423,13 +425,13 @@
   {
    "title": "Stupid Song",
    "artist": "Olivia Rodrigo",
-   "top10": 7,
-   "wks": 21,
-   "rank": 10,
+   "top10": 8,
+   "wks": 22,
+   "rank": 5,
    "debut": "2026-06-27",
    "status": "song",
    "no": 23,
-   "lw": 12
+   "lw": 10
   },
   {
    "title": "Honeybee",
@@ -448,68 +450,68 @@
   {
    "title": "Boston",
    "artist": "Stella Lefty",
-   "top10": 17,
-   "wks": 31,
-   "rank": 5,
+   "top10": 18,
+   "wks": 32,
+   "rank": 2,
    "debut": "2026-04-18",
    "status": "song",
    "no": 21,
-   "lw": 3
+   "lw": 5
   },
   {
    "title": "Been By Now",
    "artist": "Morgan Wallen",
-   "top10": 15,
-   "wks": 15,
-   "rank": 6,
+   "top10": 16,
+   "wks": 16,
+   "rank": 9,
    "debut": "2026-08-08",
    "status": "song",
    "no": 22,
-   "lw": 4
+   "lw": 6
   },
   {
    "title": "Petal",
    "artist": "Ariana Grande",
    "top10": 1,
-   "wks": 14,
-   "rank": 31,
+   "wks": 15,
+   "rank": 36,
    "debut": "2026-08-15",
    "status": "watch",
    "no": null,
-   "lw": 37
+   "lw": 31
   },
   {
    "title": "BbY WOW",
    "artist": "Karol G With Judeline & rusowsky",
-   "top10": 7,
-   "wks": 13,
-   "rank": 8,
+   "top10": 8,
+   "wks": 14,
+   "rank": 6,
    "debut": "2026-08-22",
    "status": "song",
    "no": 24,
-   "lw": 9
+   "lw": 8
   },
   {
    "title": "Last Thing You Need",
    "artist": "Morgan Wallen",
    "top10": 1,
-   "wks": 7,
-   "rank": 27,
+   "wks": 8,
+   "rank": 21,
    "debut": "2026-10-03",
    "status": "watch",
    "no": null,
-   "lw": 22
+   "lw": 27
   },
   {
    "title": "Patient Zero",
    "artist": "Taylor Swift",
-   "top10": 5,
-   "wks": 6,
-   "rank": 11,
+   "top10": 6,
+   "wks": 7,
+   "rank": 10,
    "debut": "2026-10-10",
    "status": "song",
    "no": 26,
-   "lw": 8
+   "lw": 11
   },
   {
    "title": "Cleveland!",
@@ -555,82 +557,96 @@
    "title": "Solar Eclipse",
    "artist": "Drake & Don Toliver",
    "top10": 1,
-   "wks": 5,
-   "rank": 49,
+   "wks": 6,
+   "rank": 56,
    "debut": "2026-10-17",
    "status": "watch",
    "no": null,
-   "lw": 35
+   "lw": 49
   },
   {
    "title": "Babydoll",
    "artist": "Dominic Fike",
    "top10": 1,
-   "wks": 39,
-   "rank": 16,
+   "wks": 40,
+   "rank": 13,
    "debut": "2026-02-21",
    "status": "song",
    "no": 27,
-   "lw": 13
+   "lw": 16
   },
   {
    "title": "Nicole Kidman",
    "artist": "ADELA",
-   "top10": 5,
-   "wks": 9,
+   "top10": 6,
+   "wks": 10,
    "rank": 7,
    "debut": "2026-09-19",
    "status": "song",
    "no": 28,
-   "lw": 6
+   "lw": 7
   },
   {
    "title": "Housewife",
    "artist": "Tate McRae",
-   "top10": 3,
-   "wks": 3,
+   "top10": 4,
+   "wks": 4,
    "rank": 4,
    "debut": "2026-10-31",
-   "status": "watch",
-   "no": null,
-   "lw": 2
+   "status": "song",
+   "no": 30,
+   "lw": 4
   },
   {
    "title": "Expectations",
    "artist": "Olivia Rodrigo & Chappell Roan",
    "top10": 2,
-   "wks": 21,
-   "rank": 15,
+   "wks": 22,
+   "rank": 17,
    "debut": "2026-06-27",
    "status": "song",
    "no": 29,
-   "lw": 7
+   "lw": 15
   },
   {
    "title": "Lies",
    "artist": "Zach Bryan Featuring Lana Del Rey",
    "top10": 1,
-   "wks": 3,
+   "wks": 4,
    "rank": 19,
    "debut": "2026-10-31",
    "status": "watch",
    "no": null,
-   "lw": 11
+   "lw": 19
   },
   {
    "title": "Thriller",
    "artist": "Michael Jackson",
    "top10": 1,
    "wks": 28,
-   "rank": 2,
-   "lw": 20,
+   "rank": null,
+   "lw": null,
    "debut": "1984-02-11",
-   "status": "watch",
+   "status": "out",
    "no": null,
-   "since": "2026-11-14"
+   "since": "2026-11-14",
+   "lastRank": 2,
+   "lastWeek": "2026-11-14",
+   "before": "watch"
   }
  ],
  "log": [
+  {
+   "chart": "2026-11-21",
+   "newTop10": [],
+   "newSong": [
+    "Housewife"
+   ],
+   "dropped": [
+    "Thriller"
+   ],
+   "revived": []
+  },
   {
    "chart": "2026-11-14",
    "newTop10": [
@@ -657,5 +673,5 @@
    "revived": []
   }
  ],
- "updated": "2026-11-11T05:47:31.320Z"
+ "updated": "2026-11-18T06:58:39.537Z"
 }
