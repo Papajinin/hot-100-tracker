@@ -118,6 +118,15 @@ test('탈락 곡이 11~100위에 있으면 지금 순위만 적고 횟수는 안
   assert.deepEqual([st2.songs[0].rank, st2.songs[0].lastRank, st2.songs[0].lastWeek], [null, 34, '2026-11-07']);
 });
 
+test('그 주 1~20위 저장 (Hot 100 탭): 기록 중인 곡은 Top10 횟수, 아니면 0', () => {
+  const c = chart('2026-11-07', [['S', 3, 6], ['Mid', 15, 4]]); c.entries[2].lw = 8;
+  const st = applyWeek(base([song({ top10: 4, rank: 8 })]), c);
+  assert.equal(st.top20.length, 20);
+  assert.deepEqual([st.top20[2].title, st.top20[2].top10, st.top20[2].lw, st.top20[2].wks], ['S', 5, 8, 6]);
+  assert.equal(st.top20[0].top10, 1); // 처음 Top 10에 든 채움곡
+  assert.deepEqual([st.top20[14].title, st.top20[14].top10], ['Mid', 0]);
+});
+
 test('빌보드 화면 읽기 (저장해 둔 화면이 있을 때)', () => {
   const f = process.env.CHART_HTML;
   if (!f || !fs.existsSync(f)) return;

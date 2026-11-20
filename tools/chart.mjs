@@ -88,10 +88,11 @@ export function applyWeek(state, chart) {
   const songs = st.songs.map(s => ({ ...s }));
   let nextNo = st.nextNo;
   const used = new Set();
+  const byRank = new Map(); // 이번 차트 순위 → 기록 중인 곡 (Hot 100 탭의 Top10 횟수용)
 
   for (const s of songs) {
     const e = findEntry(s, chart.entries);
-    if (e) used.add(e.rank);
+    if (e) { used.add(e.rank); byRank.set(e.rank, s); }
     // 차트에서 빠지는 주: 마지막 순위와 그 주를 적어 둠 (앱에 "마지막 23위 · 10/24주")
     if (!e && s.rank) { s.lastRank = s.rank; s.lastWeek = st.lastChart; }
     if (s.status === 'out') {
@@ -129,7 +130,9 @@ export function applyWeek(state, chart) {
   // 처음 Top 10에 든 곡 추가
   for (const e of chart.entries) {
     if (e.rank > 10 || used.has(e.rank)) continue;
-    songs.push({ title: e.title, artist: e.artist, top10: 1, wks: e.wks, rank: e.rank, lw: e.lw, debut: e.debut, status: 'watch', no: null, since: chart.date });
+    const s = { title: e.title, artist: e.artist, top10: 1, wks: e.wks, rank: e.rank, lw: e.lw, debut: e.debut, status: 'watch', no: null, since: chart.date };
+    songs.push(s);
+    byRank.set(e.rank, s);
     log.newTop10.push(e.title);
   }
 
@@ -142,7 +145,14 @@ export function applyWeek(state, chart) {
     }
   }
 
-  return { ...st, lastChart: chart.date, nextNo, songs, log: [log, ...(st.log || [])].slice(0, 60) };
+  return { ...st, lastChart: chart.date, nextNo, songs, top20: top20Of(chart, byRank), log: [log, ...(st.log || [])].slice(0, 60) };
+}
+
+// 그 주 1~20위 (앱의 Hot 100 탭). Top10 횟수는 기록 중인 곡이면 그 숫자, 아니면 0
+export function top20Of(chart, byRank) {
+  return chart.entries.slice(0, 20).map(e => ({
+    rank: e.rank, title: e.title, artist: e.artist, wks: e.wks, lw: e.lw ?? null, top10: byRank.get(e.rank)?.top10 || 0,
+  }));
 }
 
 // 다음 차트 날짜 (7일 뒤)

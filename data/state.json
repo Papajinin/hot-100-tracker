@@ -635,6 +635,168 @@
    "before": "watch"
   }
  ],
+ "top20": [
+  {
+   "rank": 1,
+   "title": "Choosin' Texas",
+   "artist": "Ella Langley",
+   "wks": 56,
+   "lw": 1,
+   "top10": 46
+  },
+  {
+   "rank": 2,
+   "title": "Boston",
+   "artist": "Stella Lefty",
+   "wks": 32,
+   "lw": 5,
+   "top10": 18
+  },
+  {
+   "rank": 3,
+   "title": "Dracula",
+   "artist": "Tame Impala & JENNIE",
+   "wks": 59,
+   "lw": 3,
+   "top10": 25
+  },
+  {
+   "rank": 4,
+   "title": "Housewife",
+   "artist": "Tate McRae",
+   "wks": 4,
+   "lw": 4,
+   "top10": 4
+  },
+  {
+   "rank": 5,
+   "title": "Stupid Song",
+   "artist": "Olivia Rodrigo",
+   "wks": 22,
+   "lw": 10,
+   "top10": 8
+  },
+  {
+   "rank": 6,
+   "title": "BbY WOW",
+   "artist": "Karol G With Judeline & rusowsky",
+   "wks": 14,
+   "lw": 8,
+   "top10": 8
+  },
+  {
+   "rank": 7,
+   "title": "Nicole Kidman",
+   "artist": "ADELA",
+   "wks": 10,
+   "lw": 7,
+   "top10": 6
+  },
+  {
+   "rank": 8,
+   "title": "Hate That I Made You Love Me",
+   "artist": "Ariana Grande",
+   "wks": 24,
+   "lw": 9,
+   "top10": 23
+  },
+  {
+   "rank": 9,
+   "title": "Been By Now",
+   "artist": "Morgan Wallen",
+   "wks": 16,
+   "lw": 6,
+   "top10": 16
+  },
+  {
+   "rank": 10,
+   "title": "Patient Zero",
+   "artist": "Taylor Swift",
+   "wks": 7,
+   "lw": 11,
+   "top10": 6
+  },
+  {
+   "rank": 11,
+   "title": "Jaded",
+   "artist": "Koe Wetzel & Ella Langley",
+   "wks": 14,
+   "lw": 18,
+   "top10": 0
+  },
+  {
+   "rank": 12,
+   "title": "Stop The Wedding!",
+   "artist": "Ashe",
+   "wks": 10,
+   "lw": 30,
+   "top10": 0
+  },
+  {
+   "rank": 13,
+   "title": "Babydoll",
+   "artist": "Dominic Fike",
+   "wks": 40,
+   "lw": 16,
+   "top10": 1
+  },
+  {
+   "rank": 14,
+   "title": "Last Christmas",
+   "artist": "Wham!",
+   "wks": 55,
+   "lw": 37,
+   "top10": 0
+  },
+  {
+   "rank": 15,
+   "title": "I Just Might",
+   "artist": "Bruno Mars",
+   "wks": 44,
+   "lw": 17,
+   "top10": 25
+  },
+  {
+   "rank": 16,
+   "title": "Loving Life Again",
+   "artist": "Ella Langley",
+   "wks": 34,
+   "lw": 20,
+   "top10": 0
+  },
+  {
+   "rank": 17,
+   "title": "Expectations",
+   "artist": "Olivia Rodrigo & Chappell Roan",
+   "wks": 22,
+   "lw": 15,
+   "top10": 2
+  },
+  {
+   "rank": 18,
+   "title": "All I Want For Christmas Is You",
+   "artist": "Mariah Carey",
+   "wks": 81,
+   "lw": 39,
+   "top10": 0
+  },
+  {
+   "rank": 19,
+   "title": "Lies",
+   "artist": "Zach Bryan Featuring Lana Del Rey",
+   "wks": 4,
+   "lw": 19,
+   "top10": 1
+  },
+  {
+   "rank": 20,
+   "title": "Be Her",
+   "artist": "Ella Langley",
+   "wks": 39,
+   "lw": 22,
+   "top10": 24
+  }
+ ],
  "log": [
   {
    "chart": "2026-11-21",

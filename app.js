@@ -1,11 +1,12 @@
-// Hot 100 Tracker 화면 v3: data/state.json(매주 GitHub가 고쳐 둠)을 읽어서 보여 주기만 함
-// 탭: 지켜보는 중(아직 판정 전 + 작년에서 넘어온 "-" 곡) / 올해의 곡(파란 번호) / 차트 아웃(올해의 곡이 되기 전에 빠진 곡, 빨강)
+// Hot 100 Tracker 화면 v4: data/state.json(매주 GitHub가 고쳐 둠)을 읽어서 보여 주기만 함
+// 탭: Hot 100(그 주 1~20위) / 지켜보는 중(아직 판정 전 + 작년에서 넘어온 "-" 곡) / 올해의 곡(파란 번호) / 차트 아웃(올해의 곡이 되기 전에 빠진 곡, 빨강)
 
 const appEl = document.getElementById('app');
-const TABS = [['watch', '지켜보는 중'], ['song', '올해의 곡'], ['out', '차트 아웃']];
+const TABS = [['hot', 'Hot 100'], ['watch', '지켜보는 중'], ['song', '올해의 곡'], ['out', '차트 아웃']];
 let data = null;
-let tab = 'watch';
-try { tab = localStorage.getItem('hot100.tab') || 'watch'; } catch (e) {}
+let tab = 'hot';
+try { tab = localStorage.getItem('hot100.tab') || 'hot'; } catch (e) {}
+if (!TABS.some(([k]) => k === tab)) tab = 'hot';
 
 function esc(s) {
   return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -16,6 +17,7 @@ function md(ymd) { return ymd ? `${Number(ymd.slice(5, 7))}/${Number(ymd.slice(8
 
 function tabSongs(key) {
   const songs = data.songs;
+  if (key === 'hot') return data.top20 || [];
   if (key === 'watch') return songs.filter(s => s.status === 'watch' || s.status === 'carry');
   if (key === 'song') return songs.filter(s => s.status === 'song').sort((a, b) => a.no - b.no);
   return songs.filter(s => s.status === 'out');
@@ -31,6 +33,15 @@ function whereText(s) {
   }
   if (s.rank) return rankText(s);
   return s.lastRank ? `차트 아웃 · 마지막 ${s.lastRank}위` : '차트 아웃';
+}
+
+// Hot 100 탭 한 줄: 올해의 곡과 같은 모양 (왼쪽 네모 = 이번 주 순위)
+function hotRowHtml(e) {
+  return `<div class="li">
+    <span class="no">${e.rank}</span>
+    <div class="info"><div class="t">${esc(e.title)}</div><div class="a"><span class="where">${rankText(e)}</span> · ${esc(e.artist)}</div></div>
+    <div class="cnt"><span>Top10</span><b>${e.top10}</b><span>WKS</span><b>${e.wks}</b></div>
+  </div>`;
 }
 
 function rowHtml(s) {
@@ -63,9 +74,9 @@ function render() {
   appEl.innerHTML = `
     <header class="top">
       <div class="top-row"><h1 class="logo">HOT 100<small>TRACKER</small></h1><span class="week">${data.year}<b>${md(data.lastChart)}주</b></span></div>
-      <div class="tabs">${TABS.map(([k, name]) => `<button type="button" data-tab="${k}" class="${k === tab ? 'on' : ''}">${name} ${counts[k]}</button>`).join('')}</div>
+      <div class="tabs">${TABS.map(([k, name]) => `<button type="button" data-tab="${k}" class="${k === tab ? 'on' : ''}">${name}${k === 'hot' ? '' : ' ' + counts[k]}</button>`).join('')}</div>
     </header>
-    <div class="list">${list.length ? list.map(rowHtml).join('') : '<p class="empty">없어요</p>'}</div>
+    <div class="list">${list.length ? list.map(tab === 'hot' ? hotRowHtml : rowHtml).join('') : `<p class="empty">${tab === 'hot' ? '다음 차트부터 여기에 보여요' : '없어요'}</p>`}</div>
     ${tab === 'watch' && list.some(s => s.status === 'carry') ? '<p class="note">"-"는 작년에서 넘어온 곡이에요. 횟수는 세지만 올해의 곡은 되지 않아요.</p>' : ''}
     <h2 class="sec-title">이번 주 바뀐 것<span>${md(data.lastChart)}주</span></h2>
     ${changesHtml()}
