@@ -1,7 +1,7 @@
 {
  "year": 2026,
- "lastChart": "2026-11-21",
- "nextNo": 31,
+ "lastChart": "2026-11-28",
+ "nextNo": 34,
  "songs": [
   {
    "title": "The Fate Of Ophelia",
@@ -142,8 +142,8 @@
   {
    "title": "Choosin' Texas",
    "artist": "Ella Langley",
-   "top10": 46,
-   "wks": 56,
+   "top10": 47,
+   "wks": 57,
    "rank": 1,
    "debut": "2025-11-01",
    "status": "song",
@@ -166,12 +166,12 @@
    "title": "I Just Might",
    "artist": "Bruno Mars",
    "top10": 25,
-   "wks": 44,
-   "rank": 15,
+   "wks": 45,
+   "rank": 19,
    "debut": "2026-01-24",
    "status": "song",
    "no": 6,
-   "lw": 17
+   "lw": 15
   },
   {
    "title": "Aperture",
@@ -225,12 +225,12 @@
    "title": "Be Her",
    "artist": "Ella Langley",
    "top10": 24,
-   "wks": 39,
-   "rank": 20,
+   "wks": 40,
+   "rank": 22,
    "debut": "2026-02-28",
    "status": "song",
    "no": 11,
-   "lw": 22
+   "lw": 20
   },
   {
    "title": "Drop Dead",
@@ -273,8 +273,8 @@
   {
    "title": "Dracula",
    "artist": "Tame Impala & JENNIE",
-   "top10": 25,
-   "wks": 59,
+   "top10": 26,
+   "wks": 60,
    "rank": 3,
    "debut": "2025-10-11",
    "status": "song",
@@ -286,11 +286,13 @@
    "artist": "Drake",
    "top10": 8,
    "wks": 26,
-   "rank": 29,
+   "rank": null,
    "debut": "2026-05-30",
    "status": "song",
    "no": 15,
-   "lw": 29
+   "lw": null,
+   "lastRank": 29,
+   "lastWeek": "2026-11-21"
   },
   {
    "title": "Ran To Atlanta",
@@ -391,23 +393,23 @@
    "title": "The Cure",
    "artist": "Olivia Rodrigo",
    "top10": 2,
-   "wks": 25,
-   "rank": 33,
+   "wks": 26,
+   "rank": 34,
    "debut": "2026-06-06",
    "status": "song",
    "no": 25,
-   "lw": 34
+   "lw": 33
   },
   {
    "title": "Hate That I Made You Love Me",
    "artist": "Ariana Grande",
    "top10": 23,
-   "wks": 24,
-   "rank": 8,
+   "wks": 25,
+   "rank": 13,
    "debut": "2026-06-13",
    "status": "song",
    "no": 16,
-   "lw": 9
+   "lw": 8
   },
   {
    "title": "I Knew It, I Knew You",
@@ -425,13 +427,13 @@
   {
    "title": "Stupid Song",
    "artist": "Olivia Rodrigo",
-   "top10": 8,
-   "wks": 22,
-   "rank": 5,
+   "top10": 9,
+   "wks": 23,
+   "rank": 7,
    "debut": "2026-06-27",
    "status": "song",
    "no": 23,
-   "lw": 10
+   "lw": 5
   },
   {
    "title": "Honeybee",
@@ -450,68 +452,68 @@
   {
    "title": "Boston",
    "artist": "Stella Lefty",
-   "top10": 18,
-   "wks": 32,
+   "top10": 19,
+   "wks": 33,
    "rank": 2,
    "debut": "2026-04-18",
    "status": "song",
    "no": 21,
-   "lw": 5
+   "lw": 2
   },
   {
    "title": "Been By Now",
    "artist": "Morgan Wallen",
    "top10": 16,
-   "wks": 16,
-   "rank": 9,
+   "wks": 17,
+   "rank": 18,
    "debut": "2026-08-08",
    "status": "song",
    "no": 22,
-   "lw": 6
+   "lw": 9
   },
   {
    "title": "Petal",
    "artist": "Ariana Grande",
    "top10": 1,
-   "wks": 15,
-   "rank": 36,
+   "wks": 16,
+   "rank": 37,
    "debut": "2026-08-15",
    "status": "watch",
    "no": null,
-   "lw": 31
+   "lw": 36
   },
   {
    "title": "BbY WOW",
    "artist": "Karol G With Judeline & rusowsky",
-   "top10": 8,
-   "wks": 14,
-   "rank": 6,
+   "top10": 9,
+   "wks": 15,
+   "rank": 8,
    "debut": "2026-08-22",
    "status": "song",
    "no": 24,
-   "lw": 8
+   "lw": 6
   },
   {
    "title": "Last Thing You Need",
    "artist": "Morgan Wallen",
    "top10": 1,
-   "wks": 8,
-   "rank": 21,
+   "wks": 9,
+   "rank": 17,
    "debut": "2026-10-03",
    "status": "watch",
    "no": null,
-   "lw": 27
+   "lw": 21
   },
   {
    "title": "Patient Zero",
    "artist": "Taylor Swift",
    "top10": 6,
-   "wks": 7,
-   "rank": 10,
+   "wks": 8,
+   "rank": 12,
    "debut": "2026-10-10",
    "status": "song",
    "no": 26,
-   "lw": 11
+   "lw": 10
   },
   {
    "title": "Cleveland!",
@@ -557,30 +559,30 @@
    "title": "Solar Eclipse",
    "artist": "Drake & Don Toliver",
    "top10": 1,
-   "wks": 6,
-   "rank": 56,
+   "wks": 7,
+   "rank": 63,
    "debut": "2026-10-17",
    "status": "watch",
    "no": null,
-   "lw": 49
+   "lw": 56
   },
   {
    "title": "Babydoll",
    "artist": "Dominic Fike",
    "top10": 1,
-   "wks": 40,
-   "rank": 13,
+   "wks": 41,
+   "rank": 16,
    "debut": "2026-02-21",
    "status": "song",
    "no": 27,
-   "lw": 16
+   "lw": 13
   },
   {
    "title": "Nicole Kidman",
    "artist": "ADELA",
-   "top10": 6,
-   "wks": 10,
-   "rank": 7,
+   "top10": 7,
+   "wks": 11,
+   "rank": 10,
    "debut": "2026-09-19",
    "status": "song",
    "no": 28,
@@ -589,9 +591,9 @@
   {
    "title": "Housewife",
    "artist": "Tate McRae",
-   "top10": 4,
-   "wks": 4,
-   "rank": 4,
+   "top10": 5,
+   "wks": 5,
+   "rank": 6,
    "debut": "2026-10-31",
    "status": "song",
    "no": 30,
@@ -601,19 +603,19 @@
    "title": "Expectations",
    "artist": "Olivia Rodrigo & Chappell Roan",
    "top10": 2,
-   "wks": 22,
-   "rank": 17,
+   "wks": 23,
+   "rank": 20,
    "debut": "2026-06-27",
    "status": "song",
    "no": 29,
-   "lw": 15
+   "lw": 17
   },
   {
    "title": "Lies",
    "artist": "Zach Bryan Featuring Lana Del Rey",
    "top10": 1,
-   "wks": 4,
-   "rank": 19,
+   "wks": 5,
+   "rank": 25,
    "debut": "2026-10-31",
    "status": "watch",
    "no": null,
@@ -633,6 +635,42 @@
    "lastRank": 2,
    "lastWeek": "2026-11-14",
    "before": "watch"
+  },
+  {
+   "title": "All I Want For Christmas Is You",
+   "artist": "Mariah Carey",
+   "top10": 1,
+   "wks": 82,
+   "rank": 4,
+   "lw": 18,
+   "debut": "2000-01-08",
+   "status": "song",
+   "no": 31,
+   "since": "2026-11-28"
+  },
+  {
+   "title": "Last Christmas",
+   "artist": "Wham!",
+   "top10": 1,
+   "wks": 56,
+   "rank": 5,
+   "lw": 14,
+   "debut": "2017-01-07",
+   "status": "song",
+   "no": 32,
+   "since": "2026-11-28"
+  },
+  {
+   "title": "Jingle Bell Rock",
+   "artist": "Bobby Helms",
+   "top10": 1,
+   "wks": 70,
+   "rank": 9,
+   "lw": 28,
+   "debut": "1958-12-22",
+   "status": "song",
+   "no": 33,
+   "since": "2026-11-28"
   }
  ],
  "top20": [
@@ -640,164 +678,179 @@
    "rank": 1,
    "title": "Choosin' Texas",
    "artist": "Ella Langley",
-   "wks": 56,
+   "wks": 57,
    "lw": 1,
-   "top10": 46
+   "top10": 47
   },
   {
    "rank": 2,
    "title": "Boston",
    "artist": "Stella Lefty",
-   "wks": 32,
-   "lw": 5,
-   "top10": 18
+   "wks": 33,
+   "lw": 2,
+   "top10": 19
   },
   {
    "rank": 3,
    "title": "Dracula",
    "artist": "Tame Impala & JENNIE",
-   "wks": 59,
+   "wks": 60,
    "lw": 3,
-   "top10": 25
+   "top10": 26
   },
   {
    "rank": 4,
-   "title": "Housewife",
-   "artist": "Tate McRae",
-   "wks": 4,
-   "lw": 4,
-   "top10": 4
+   "title": "All I Want For Christmas Is You",
+   "artist": "Mariah Carey",
+   "wks": 82,
+   "lw": 18,
+   "top10": 1
   },
   {
    "rank": 5,
-   "title": "Stupid Song",
-   "artist": "Olivia Rodrigo",
-   "wks": 22,
-   "lw": 10,
-   "top10": 8
+   "title": "Last Christmas",
+   "artist": "Wham!",
+   "wks": 56,
+   "lw": 14,
+   "top10": 1
   },
   {
    "rank": 6,
-   "title": "BbY WOW",
-   "artist": "Karol G With Judeline & rusowsky",
-   "wks": 14,
-   "lw": 8,
-   "top10": 8
+   "title": "Housewife",
+   "artist": "Tate McRae",
+   "wks": 5,
+   "lw": 4,
+   "top10": 5
   },
   {
    "rank": 7,
-   "title": "Nicole Kidman",
-   "artist": "ADELA",
-   "wks": 10,
-   "lw": 7,
-   "top10": 6
+   "title": "Stupid Song",
+   "artist": "Olivia Rodrigo",
+   "wks": 23,
+   "lw": 5,
+   "top10": 9
   },
   {
    "rank": 8,
-   "title": "Hate That I Made You Love Me",
-   "artist": "Ariana Grande",
-   "wks": 24,
-   "lw": 9,
-   "top10": 23
+   "title": "BbY WOW",
+   "artist": "Karol G With Judeline & rusowsky",
+   "wks": 15,
+   "lw": 6,
+   "top10": 9
   },
   {
    "rank": 9,
-   "title": "Been By Now",
-   "artist": "Morgan Wallen",
-   "wks": 16,
-   "lw": 6,
-   "top10": 16
+   "title": "Jingle Bell Rock",
+   "artist": "Bobby Helms",
+   "wks": 70,
+   "lw": 28,
+   "top10": 1
   },
   {
    "rank": 10,
-   "title": "Patient Zero",
-   "artist": "Taylor Swift",
-   "wks": 7,
-   "lw": 11,
-   "top10": 6
+   "title": "Nicole Kidman",
+   "artist": "ADELA",
+   "wks": 11,
+   "lw": 7,
+   "top10": 7
   },
   {
    "rank": 11,
-   "title": "Jaded",
-   "artist": "Koe Wetzel & Ella Langley",
-   "wks": 14,
-   "lw": 18,
+   "title": "Stop The Wedding!",
+   "artist": "Ashe",
+   "wks": 11,
+   "lw": 12,
    "top10": 0
   },
   {
    "rank": 12,
-   "title": "Stop The Wedding!",
-   "artist": "Ashe",
-   "wks": 10,
+   "title": "Patient Zero",
+   "artist": "Taylor Swift",
+   "wks": 8,
+   "lw": 10,
+   "top10": 6
+  },
+  {
+   "rank": 13,
+   "title": "Hate That I Made You Love Me",
+   "artist": "Ariana Grande",
+   "wks": 25,
+   "lw": 8,
+   "top10": 23
+  },
+  {
+   "rank": 14,
+   "title": "Rockin' Around The Christmas Tree",
+   "artist": "Brenda Lee",
+   "wks": 73,
    "lw": 30,
    "top10": 0
   },
   {
-   "rank": 13,
-   "title": "Babydoll",
-   "artist": "Dominic Fike",
-   "wks": 40,
-   "lw": 16,
-   "top10": 1
-  },
-  {
-   "rank": 14,
-   "title": "Last Christmas",
-   "artist": "Wham!",
-   "wks": 55,
-   "lw": 37,
-   "top10": 0
-  },
-  {
    "rank": 15,
-   "title": "I Just Might",
-   "artist": "Bruno Mars",
-   "wks": 44,
-   "lw": 17,
-   "top10": 25
+   "title": "Jaded",
+   "artist": "Koe Wetzel & Ella Langley",
+   "wks": 15,
+   "lw": 11,
+   "top10": 0
   },
   {
    "rank": 16,
-   "title": "Loving Life Again",
-   "artist": "Ella Langley",
-   "wks": 34,
-   "lw": 20,
-   "top10": 0
-  },
-  {
-   "rank": 17,
-   "title": "Expectations",
-   "artist": "Olivia Rodrigo & Chappell Roan",
-   "wks": 22,
-   "lw": 15,
-   "top10": 2
-  },
-  {
-   "rank": 18,
-   "title": "All I Want For Christmas Is You",
-   "artist": "Mariah Carey",
-   "wks": 81,
-   "lw": 39,
-   "top10": 0
-  },
-  {
-   "rank": 19,
-   "title": "Lies",
-   "artist": "Zach Bryan Featuring Lana Del Rey",
-   "wks": 4,
-   "lw": 19,
+   "title": "Babydoll",
+   "artist": "Dominic Fike",
+   "wks": 41,
+   "lw": 13,
    "top10": 1
   },
   {
+   "rank": 17,
+   "title": "Last Thing You Need",
+   "artist": "Morgan Wallen",
+   "wks": 9,
+   "lw": 21,
+   "top10": 1
+  },
+  {
+   "rank": 18,
+   "title": "Been By Now",
+   "artist": "Morgan Wallen",
+   "wks": 17,
+   "lw": 9,
+   "top10": 16
+  },
+  {
+   "rank": 19,
+   "title": "I Just Might",
+   "artist": "Bruno Mars",
+   "wks": 45,
+   "lw": 15,
+   "top10": 25
+  },
+  {
    "rank": 20,
-   "title": "Be Her",
-   "artist": "Ella Langley",
-   "wks": 39,
-   "lw": 22,
-   "top10": 24
+   "title": "Expectations",
+   "artist": "Olivia Rodrigo & Chappell Roan",
+   "wks": 23,
+   "lw": 17,
+   "top10": 2
   }
  ],
  "log": [
+  {
+   "chart": "2026-11-28",
+   "newTop10": [
+    "All I Want For Christmas Is You",
+    "Last Christmas",
+    "Jingle Bell Rock"
+   ],
+   "newSong": [
+    "All I Want For Christmas Is You",
+    "Last Christmas",
+    "Jingle Bell Rock"
+   ],
+   "dropped": [],
+   "revived": []
+  },
   {
    "chart": "2026-11-21",
    "newTop10": [],
@@ -835,5 +888,5 @@
    "revived": []
   }
  ],
- "updated": "2026-11-18T06:58:39.537Z"
+ "updated": "2026-11-25T08:03:56.591Z"
 }
